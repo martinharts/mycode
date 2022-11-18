@@ -57,7 +57,7 @@ def street_bikes():
         if bike["type"] == "street bike":
             bikes.append(bike)
 
-    return render_template("seven.html", list = bikes)
+    return render_template("street.html", list = bikes)
 
 # endpoint to return seven natural wonders of the world
 @app.route("/dirtbikes")
@@ -67,7 +67,7 @@ def dirt_bikes():
         if bike["type"] == "dirt bike":
             bikes.append(bike)
 
-    return render_template("natural.html", list = bikes)
+    return render_template("dirt.html", list = bikes)
 
 # endpoint that returns JSON
 @app.route("/all")
